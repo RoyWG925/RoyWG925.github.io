@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roy Wang – Resume (Editorial Tech)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Outfit', -apple-system, sans-serif;
+      font-size: 10.5pt;
+      color: #1a1a1a;
+      background: #f0f0f0;
+      padding: 24px;
+    }
+
+    .page {
+      background: white;
+      max-width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 18mm 16mm 14mm 16mm;
+      box-shadow: 0 4px 40px rgba(0,0,0,0.08);
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 2px solid #000;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    header h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24pt;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #000;
+      text-transform: uppercase;
+    }
+    .tagline {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 11pt;
+      color: #444;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+    .contact {
+      margin-top: 6px;
+      font-size: 9.5pt;
+      color: #555;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .contact a { 
+      color: #000; 
+      text-decoration: none; 
+      border-bottom: 1px dotted #ccc;
+      transition: border-bottom 0.2s;
+    }
+    .contact a:hover { border-bottom-style: solid; border-color: #000; }
+
+    /* ── Section ── */
+    section { margin-bottom: 14px; }
+    section h2 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 11.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #000;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+
+    /* ── Entry (project / experience) ── */
+    .entry { margin-bottom: 12px; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .entry-title {
+      font-weight: 600;
+      font-size: 10.5pt;
+      color: #000;
+    }
+    .entry-sub {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 9.5pt;
+      color: #555;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-top: 1px;
+    }
+    .entry-date {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: #000;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .entry ul {
+      margin-top: 5px;
+      padding-left: 14px;
+      list-style: none;
+    }
+    .entry ul li {
+      position: relative;
+      padding-left: 10px;
+      margin-bottom: 3.5px;
+      line-height: 1.5;
+      color: #333;
+      font-size: 10pt;
+      font-weight: 300;
+    }
+    .entry ul li strong { font-weight: 500; color: #000; }
+    .entry ul li::before {
+      content: '\25A0'; /* Square bullet for brutalist look */
+      position: absolute;
+      left: -2px;
+      color: #000;
+      font-size: 5pt;
+      top: 5px;
+    }
+
+    /* ── Education ── */
+    .edu-block { margin-bottom: 8px; }
+    .edu-name { font-weight: 600; font-size: 10.5pt; color: #000; }
+    .edu-deg { color: #333; font-size: 10pt; margin-bottom: 4px; font-weight: 400;}
+    .gpa-line {
+      font-size: 9.5pt;
+      color: #333;
+      line-height: 1.6;
+    }
+    .coursework {
+      font-size: 9.5pt;
+      color: #666;
+      margin-top: 2px;
+    }
+    .highlight {
+      background: #f4f4f4;
+      color: #000;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 2px;
+      border: 1px solid #ddd;
+    }
+
+    /* ── Skills ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 5px 16px;
+      font-size: 10pt;
+    }
+    .skill-cat { font-family: 'Rajdhani', sans-serif; font-weight: 600; color: #000; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; }
+    .skill-val { color: #333; font-weight: 300;}
+    .skill-val strong { font-weight: 500; color: #000; }
+
+    /* ── Languages ── */
+    .lang-row { display: flex; gap: 24px; font-size: 10pt; color: #333; font-weight: 300; }
+    .lang-row strong { font-weight: 500; color: #000; }
+
+    /* ── Differentiator ── */
+    .diff-box {
+      background: #fafafa;
+      border-left: 3px solid #000;
+      padding: 10px 14px;
+      font-size: 9.5pt;
+      color: #333;
+      line-height: 1.6;
+      font-weight: 300;
+      margin-top: 6px;
+    }
+    .diff-box strong { font-weight: 500; color: #000; }
+
+    /* ── Print ── */
+    @media print {
+      body { background: white; padding: 0; }
+      .page {
+        box-shadow: none;
+        padding: 14mm 14mm 12mm 14mm;
+        max-width: 100%;
+      }
+      @page { size: A4; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header>
+    <h1>Yuyang (Roy) Wang</h1>
+    <div class="tagline">AI Application Engineer — Bridging ML, Full-Stack, and Human-Centered Design</div>
+    <div class="contact">
+      <span><a href="mailto:jg971402@gmail.com">jg971402@gmail.com</a></span>
+      <span><a href="https://github.com/RoyWG925" target="_blank">github.com/RoyWG925</a></span>
+      <span><a href="https://nucleus-io.vercel.app" target="_blank">Portfolio: nucleus-io.vercel.app</a></span>
+    </div>
+  </header>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+    <div class="edu-block">
+      <div class="entry-header">
+        <span class="edu-name">National Taiwan Normal University (NTNU)</span>
+        <span class="entry-date">SEP 2021 – JUN 2026</span>
+      </div>
+      <div class="edu-deg">Bachelor of Science in Learning Sciences</div>
+      <div class="gpa-line">
+        GPA: <strong>3.47 / 4.3</strong> (Overall) &nbsp;|&nbsp;
+        <span class="highlight">4.12 / 4.3</span> (Senior Fall 2024 — Ranked <strong>4th in class</strong>)
+        &nbsp;|&nbsp; Last 2 Years: <strong>~3.78 / 4.3</strong>
+      </div>
+      <div class="coursework">Relevant: Deep Learning, Generative AI Application Engineering, Discrete Mathematics</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects &amp; Research</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Event-driven Sentiment &amp; Market Performance</span>
+        <span class="entry-date">JAN 2025 – DEC 2025</span>
+      </div>
+      <div class="entry-sub">NLP Research · NTNU</div>
+      <ul>
+        <li>Designed a <strong>SQLite data pipeline</strong> to crawl, clean, and store <strong>20,000+ posts</strong> from PTT Stock Board</li>
+        <li>Fine-tuned a <strong>BERT-based sentiment classifier</strong> on domain-specific financial text, improving <strong>F1 from 0.23 → 0.68</strong> through class-imbalance handling and custom tokenization</li>
+        <li>Conducted <strong>time series analysis</strong> correlating sentiment volatility with TAIEX fluctuations for event-driven trading research</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Semantic Segmentation Model Comparison</span>
+        <span class="entry-date">JAN 2024 – MAY 2024</span>
+      </div>
+      <div class="entry-sub">Computer Vision Research · NTNU</div>
+      <ul>
+        <li>Trained <strong>SegFormer</strong> and <strong>MobileNet-UNet</strong> on <strong>BDD100K</strong> (10K annotated driving images)</li>
+        <li>Systematically evaluated with <strong>confusion matrices, mIoU, per-class accuracy</strong>, identifying SegFormer's edge on small-object classes</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Chewsy — Real-time Multiplayer Restaurant Decision App</span>
+        <span class="entry-date">2025</span>
+      </div>
+      <div class="entry-sub">React · Firebase · Framer Motion</div>
+      <ul>
+        <li>Built a Tinder-style swiping app for groups to find restaurant matches, with <strong>live Firebase state sync</strong> across users</li>
+        <li>Implemented QR-based room joining, anonymous auth, and spin-wheel tiebreaker with smooth animations</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">NUCLEUS.IO — Interactive 3D Portfolio</span>
+        <span class="entry-date">2025</span>
+      </div>
+      <div class="entry-sub">Three.js · WebGL · Custom Shaders</div>
+      <ul>
+        <li>Engineered a gamified portfolio: fly a spaceship through space, collide with neon text, collect project orbs</li>
+        <li>Built custom post-processing (Bloom), physics-based text collision, and responsive UI overlays</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">GigaJoule: Scrap Matrix (Engine)</span>
+        <span class="entry-date">2025 – PRESENT</span>
+      </div>
+      <div class="entry-sub">Godot Engine · GDScript</div>
+      <ul>
+        <li>Designing emergent gameplay with multi-cell item synergy, dynamic grid adjacency, and real-time settlement logic</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <span class="skill-cat">AI / ML</span>
+      <span class="skill-val"><strong>PyTorch, Transformers (BERT, SegFormer)</strong>, NLP, Sentiment Analysis, Computer Vision, CUDA</span>
+
+      <span class="skill-cat">Programming</span>
+      <span class="skill-val"><strong>Python, JavaScript / TypeScript</strong>, GDScript, SQL</span>
+
+      <span class="skill-cat">Web / Full-Stack</span>
+      <span class="skill-val"><strong>React, Tailwind CSS, Firebase, Vite</strong>, Three.js, WebGL, Canvas API</span>
+
+      <span class="skill-cat">Data Engineer</span>
+      <span class="skill-val"><strong>Pandas, NumPy, SQLite</strong>, Web Scraping (BeautifulSoup)</span>
+
+      <span class="skill-cat">Toolchain</span>
+      <span class="skill-val"><strong>Git / GitHub, Docker, Vercel</strong>, Cursor (AI-augmented dev)</span>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section>
+    <h2>Languages</h2>
+    <div class="lang-row">
+      <span><strong>Chinese</strong> — Native</span>
+      <span><strong>English</strong> — Intermediate &nbsp;(TOEIC 720)</span>
+    </div>
+  </section>
+
+  <!-- Differentiator -->
+  <section>
+    <h2>What Sets Me Apart</h2>
+    <div class="diff-box">
+      I combine <strong>NLP + Computer Vision research</strong> with <strong>full-stack product building</strong> and a <strong>Learning Sciences background</strong> in human cognition. I don't just build models — I build products people can use. This intersection of AI engineering, creative coding, and understanding how humans learn makes me effective in AI application, EdTech, and HCI-adjacent roles.
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
