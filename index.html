@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roy Wang — AI Application Engineer</title>
+    <meta name="description" content="Roy Wang's portfolio — AI Application Engineer building at the intersection of NLP, Computer Vision, creative coding, and product design.">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Outfit:wght@300;400;500;700&family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor glow -->
+    <div id="cursor-glow" class="cursor-glow"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-logo">RW<span class="accent">.</span></div>
+        <div class="nav-links">
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link nav-cta">Get in Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span class="status-dot"></span>
+                Open to Work — 2026
+            </div>
+            <h1 class="hero-name">
+                Roy Wang
+                <span class="hero-cn">王語揚</span>
+            </h1>
+            <p class="hero-title">AI Application Engineer</p>
+            <p class="hero-subtitle">
+                I build products at the intersection of <span class="highlight">machine learning</span>, 
+                <span class="highlight">creative coding</span>, and <span class="highlight">human-centered design</span>.
+            </p>
+            <div class="hero-actions">
+                <a href="https://nucleus-io.vercel.app" target="_blank" rel="noopener" class="btn btn-primary">
+                    <span class="btn-icon">🚀</span>
+                    Explore 3D Portfolio
+                </a>
+                <a href="#projects" class="btn btn-ghost">
+                    View Projects ↓
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-value">5+</div>
+                    <div class="stat-label">Shipped Projects</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Live Deployments</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">NTNU</div>
+                    <div class="stat-label">B.S. Learning Sciences</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-orbit">
+                <div class="orbit-ring ring-1"></div>
+                <div class="orbit-ring ring-2"></div>
+                <div class="orbit-ring ring-3"></div>
+                <div class="orbit-dot dot-1"></div>
+                <div class="orbit-dot dot-2"></div>
+                <div class="orbit-dot dot-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <span class="section-tag">// Featured Work</span>
+            <h2 class="section-title">Projects</h2>
+        </div>
+
+        <!-- Featured: NUCLEUS.IO -->
+        <div class="project-featured">
+            <div class="project-featured-img">
+                <img src="assets/nucleus.png" alt="NUCLEUS.IO — Interactive 3D Developer Portfolio" loading="lazy">
+                <div class="project-featured-overlay">
+                    <a href="https://nucleus-io.vercel.app" target="_blank" rel="noopener" class="overlay-btn">
+                        Launch Experience →
+                    </a>
+                </div>
+            </div>
+            <div class="project-featured-info">
+                <div class="project-badges">
+                    <span class="badge badge-highlight">★ Featured</span>
+                    <span class="badge">Solo Project</span>
+                    <span class="badge">Creative Coding</span>
+                </div>
+                <h3 class="project-name">NUCLEUS.IO</h3>
+                <p class="project-tagline">Interactive 3D Developer Portfolio</p>
+                <p class="project-desc">
+                    A flyable 3D universe built with Three.js. Pilot a spaceship through neon physics, 
+                    collect project orbs, and squash space bugs — all running custom GLSL shaders, 
+                    a procedural audio engine, and a multi-layer post-processing pipeline.
+                </p>
+                <div class="project-tech">
+                    <span>Three.js</span>
+                    <span>WebGL</span>
+                    <span>GLSL Shaders</span>
+                    <span>Web Audio API</span>
+                    <span>Vite</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://nucleus-io.vercel.app" target="_blank" rel="noopener" class="link-btn link-primary">Live Demo</a>
+                    <a href="https://github.com/RoyWG925" target="_blank" rel="noopener" class="link-btn link-ghost">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid">
+            <!-- Chewsy -->
+            <article class="project-card">
+                <div class="project-card-img">
+                    <img src="assets/chewsy.png" alt="Chewsy" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="https://chewsy-51ce4.web.app/" target="_blank" rel="noopener" class="overlay-btn">View →</a>
+                    </div>
+                </div>
+                <div class="project-card-info">
+                    <div class="project-badges">
+                        <span class="badge">Web App</span>
+                        <span class="badge">Real-time</span>
+                    </div>
+                    <h3>Chewsy</h3>
+                    <p>Real-time multiplayer restaurant decision app. Tinder-style swiping with Firebase live sync across devices.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Firebase</span>
+                        <span>Framer Motion</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://chewsy-51ce4.web.app/" target="_blank" rel="noopener" class="link-btn link-primary">Live Demo</a>
+                        <a href="https://github.com/RoyWG925/chewsy" target="_blank" rel="noopener" class="link-btn link-ghost">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- T-Minus -->
+            <article class="project-card">
+                <div class="project-card-img">
+                    <img src="assets/tminus.png" alt="T-Minus" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="https://roywg925.github.io/T-MINUS/" target="_blank" rel="noopener" class="overlay-btn">View →</a>
+                    </div>
+                </div>
+                <div class="project-card-info">
+                    <div class="project-badges">
+                        <span class="badge">UI/UX</span>
+                        <span class="badge">Canvas API</span>
+                    </div>
+                    <h3>T-Minus</h3>
+                    <p>Cosmic countdown platform with glassmorphism cards, procedural starfield via Canvas API, and community voting.</p>
+                    <div class="project-tech">
+                        <span>Vanilla JS</span>
+                        <span>Canvas API</span>
+                        <span>Zero Dependencies</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://roywg925.github.io/T-MINUS/" target="_blank" rel="noopener" class="link-btn link-primary">Live Demo</a>
+                        <a href="https://github.com/RoyWG925/deadline-planet" target="_blank" rel="noopener" class="link-btn link-ghost">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- GridReactor -->
+            <article class="project-card">
+                <div class="project-card-img">
+                    <img src="assets/gridreactor.png" alt="GridReactor Engine" loading="lazy">
+                    <div class="card-overlay">
+                        <span class="overlay-status">In Development</span>
+                    </div>
+                </div>
+                <div class="project-card-info">
+                    <div class="project-badges">
+                        <span class="badge badge-wip">In Dev</span>
+                        <span class="badge">Game Design</span>
+                    </div>
+                    <h3>GigaJoule: Scrap Matrix</h3>
+                    <p>Physics-based roguelite with multi-cell item synergy, dynamic grid adjacency, and settlement meta-progression. Built in Godot.</p>
+                    <div class="project-tech">
+                        <span>Godot</span>
+                        <span>GDScript</span>
+                        <span>System Design</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="link-btn link-ghost" style="opacity:0.5">Coming Soon</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- BERT NLP -->
+            <article class="project-card">
+                <div class="project-card-img">
+                    <img src="assets/bert_nlp.png" alt="Market Sentiment vs TAIEX" loading="lazy">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="project-card-info">
+                    <div class="project-badges">
+                        <span class="badge">NLP</span>
+                        <span class="badge">Data Engineering</span>
+                    </div>
+                    <h3>Market Sentiment × TAIEX</h3>
+                    <p>Fine-tuned BERT on 20,000+ PTT stock posts to correlate sentiment volatility with Taiwan Stock Exchange Index. F1: 0.23 → 0.68.</p>
+                    <div class="project-tech">
+                        <span>PyTorch</span>
+                        <span>BERT</span>
+                        <span>SQLite</span>
+                        <span>Web Scraping</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="link-btn link-ghost" style="opacity:0.5">Academic Project</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <span class="section-tag">// Capabilities</span>
+            <h2 class="section-title">What I Work With</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h3 class="skill-group-title">
+                    <span class="skill-icon">⚡</span>
+                    Core Superpower
+                </h3>
+                <p class="skill-desc">AI-Augmented Development — leveraging AI tools (Cursor, Claude) to rapidly prototype and ship across any stack. The skill isn't using AI; it's knowing <em>what to build</em> and <em>judging quality</em>.</p>
+            </div>
+            <div class="skill-group">
+                <h3 class="skill-group-title">
+                    <span class="skill-icon">🧠</span>
+                    AI & Machine Learning
+                </h3>
+                <div class="skill-tags">
+                    <span>PyTorch</span>
+                    <span>BERT Fine-tuning</span>
+                    <span>SegFormer / UNet</span>
+                    <span>LLM Integration</span>
+                    <span>CUDA Setup</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3 class="skill-group-title">
+                    <span class="skill-icon">🎨</span>
+                    Creative & Frontend
+                </h3>
+                <div class="skill-tags">
+                    <span>Three.js / WebGL</span>
+                    <span>React</span>
+                    <span>GLSL Shaders</span>
+                    <span>Framer Motion</span>
+                    <span>Canvas API</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3 class="skill-group-title">
+                    <span class="skill-icon">🔧</span>
+                    Engineering & Deploy
+                </h3>
+                <div class="skill-tags">
+                    <span>Firebase</span>
+                    <span>Vercel</span>
+                    <span>Vite</span>
+                    <span>Git</span>
+                    <span>SQLite</span>
+                    <span>Godot Engine</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3 class="skill-group-title">
+                    <span class="skill-icon">🎓</span>
+                    Domain Knowledge
+                </h3>
+                <div class="skill-tags">
+                    <span>Learning Sciences</span>
+                    <span>HCI</span>
+                    <span>EdTech</span>
+                    <span>Game Design</span>
+                    <span>Cognitive Science</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <span class="section-tag">// Background</span>
+            <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm a B.S. Learning Sciences student at <strong>National Taiwan Normal University (NTNU)</strong>, 
+                    graduating June 2026. My academic background gives me a unique lens on how humans learn and interact 
+                    with technology — something pure engineers often miss.
+                </p>
+                <p>
+                    I build at the intersection of <strong>AI, creative coding, and product design</strong>. 
+                    My projects range from fine-tuning BERT models on 20K+ social media posts to constructing 
+                    flyable 3D universes in WebGL and designing roguelite game systems in Godot.
+                </p>
+                <p>
+                    I'm not a traditional CS graduate. I'm a <strong>builder</strong> who uses AI tools to ship 
+                    products faster than most, while maintaining the judgment to know what good looks like.
+                </p>
+                <div class="about-timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">2026</span>
+                        <span class="timeline-text">B.S. Graduation → Military Service (4 months)</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">2027–28</span>
+                        <span class="timeline-text">AI Application Engineer — Building products</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">2029</span>
+                        <span class="timeline-text">CS/HCI Master's Abroad (Japan SGU / EU / CA)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="contact-card">
+            <h2>Let's Build Something</h2>
+            <p>I'm looking for opportunities in AI application development, creative technology, or EdTech product teams.</p>
+            <div class="contact-links">
+                <a href="mailto:jg971402@gmail.com" class="contact-btn">
+                    <span>✉</span> jg971402@gmail.com
+                </a>
+                <a href="https://github.com/RoyWG925" target="_blank" rel="noopener" class="contact-btn">
+                    <span>⌨</span> GitHub
+                </a>
+                <a href="https://nucleus-io.vercel.app" target="_blank" rel="noopener" class="contact-btn contact-btn-accent">
+                    <span>🚀</span> Interactive Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Roy Wang — Built with care.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
